@@ -1,8 +1,8 @@
 华中科技大学毕业论文LaTeX模板-2017-Mactex Version
 ---
 
-本项目Fork自[Skinaze](https://github.com/skinaze/HUSTPaperTemp)的仓库。
-在本地编译时，MacOS下的Mactex对一些指令会报错，所以对原有的`.cls`文件进行了修改。
+本项目源自[Skinaze](https://github.com/skinaze/HUSTPaperTemp)的项目。原本的模版
+在本地编译时，MacOS下的Mactex会报错，所以对原有的`.cls`文件进行了修改。修改后较原文档简陋了很多，但是能够在Mac和PC上都编译成功，不需要额外的设置。
 
 修改的内容包括：
 
@@ -12,31 +12,19 @@
 - 取消`Autoref`相关的设置
 - 取消对复杂表格的预设（需要的可以自己设置）
 
-除上述区别外于愿文档的命令基本相同，更改后的文件在Mactex以及Texlive、MikTex下均能调试通过。
+除上述区别外于愿文档的命令基本相同。
+还需要手动设置的地方：
 
+- 在每一个Section(章节)结束后，按照学校的要求，需要另起一页，所以需要在Section结束时输入`\clearpage`
+-因为取消了原文档对图片、表格环境的`[htbp]`设定，如果在生成pdf文件后图片位置不合适要在相应声明环境的地方使用
 
-以下为原说明信息。
-
+```latex
+\begin{figure}[htbp]
+...
+\end{figure}
 ```
-本项目为非官方的华中科技大学本科生毕业论文LaTeX模板，考虑到目前网络上可以找到的本校模板已经严重过时，本人重新制作了该模板，符合2016年华中科技大学本科生毕业论文官方模板格式。
+命令
 
-##模板样例
-![样例](Example/example.png)
-正文样例可以参照[PDF样例文档](Example/example.pdf)
+原项目中对该模版的使用有详细的叙述，更详细的说明推荐参考原模版的使用说明。
 
-##使用方法
-* 下载本模板[最新Release版本](https://github.com/skinaze/HUSTPaperTemp/releases)
-* 下载并安装最新版本的MiKTeX （推荐）或者TeX Live
-* 打开TeX works，并设置默认编译工具(Edit->Preference->Typesetting->Processing Tools->Default)为XeLaTeX+MakeIndex+BibTeX
-* 新建一个tex文档并保存在一个文件夹下，将Template文件夹下所有文件拷贝到该文件夹下
-* 在新的tex文档中使用\documentclass{HustGraduPaper}使用模板定义的样式
-
-##详细说明
-详细说明请参考[使用说明](Instruction/使用说明.pdf)，或者查看[Example文件夹](Example)下的例子。
-
-##问题反馈
-如果在使用本模板遇到任何问题，可以[发邮件给我](mailto:me@stringblog.com)，或者前往[我的博客](http://stringblog.com/)。
-
-##未发布的更新内容
-无
-```
+本模版中对环境、一些命令的设置均使用[Skinaze](https://github.com/skinaze/HUSTPaperTemp)的模版，Windows用户推荐使用该模版，因为设置更加丰富，本模版适用~~买了Mac想用Latex写毕业论文但是不会定制格式~~的同学。
