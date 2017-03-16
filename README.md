@@ -27,4 +27,4 @@
 
 原项目中对该模版的使用有详细的叙述，更详细的说明推荐参考原模版的使用说明。
 
-本模版中对环境、一些命令的设置均使用[Skinaze](https://github.com/skinaze/HUSTPaperTemp)的模版，Windows用户推荐使用该模版，因为设置更加丰富，本模版适用__买了Mac想用Latex写毕业论文但是不会定制格式__的同学。
+本模版中对环境、一些命令的设置均使用[Skinaze](https://github.com/skinaze/HUSTPaperTemp)的模版，Windows用户推荐使用该模版，因为设置更加丰富，本模版适用**买了Mac想用Latex写毕业论文但是不会定制格式**的同学。
