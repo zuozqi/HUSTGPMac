@@ -1,4 +1,5 @@
-#华中科技大学毕业论文LaTeX模板-2017-Mactex Version
+华中科技大学毕业论文LaTeX模板-2017-Mactex Version
+---
 
 本项目Fork自[Skinaze](https://github.com/skinaze/HUSTPaperTemp)的仓库。
 在本地编译时，MacOS下的Mactex对一些指令会报错，所以对原有的`.cls`文件进行了修改。
