@@ -2,7 +2,7 @@
 ---
 
 本项目源自[Skinaze](https://github.com/skinaze/HUSTPaperTemp)的项目。原本的模版
-在本地编译时，MacOS下的Mactex会报错，所以对原有的`.cls`文件进行了修改。修改后较原文档简陋了很多，但是能够在Mac和PC上都编译成功，不需要额外的设置。
+在本地编译时，使用MacOS下的Mactex编译会报错，所以对原有的`.cls`文件进行了修改。修改后较原文档简陋了很多，但是在Mac和PC上都能被直接编译成功(Mac和PC上使用的均为Sublime Text 3 + Latextools的环境)。
 
 修改的内容包括：
 
